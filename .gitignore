@@ -1,0 +1,9 @@
+﻿*.db
+*.trace
+*.trace.gz
+*.tr
+__pycache__/
+.ipynb_checkpoints/
+Miniconda3-*.sh
+ChampSim_CRC2/traces/
+DB/
