@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 # Reproduce Adaptive SHiP-D cache replacement policy results
 # CSC 491 - Generative AI for Systems
 # Author: Rishabh Patel
@@ -24,8 +24,8 @@ export SIM_INST="10000000"
 export MODEL="o4-mini"
 export ITERATIONS="25"
 
-# Note: Requires OpenAI API key to be set
-if [ -z "" ]; then
+# Check for API key
+if [ -z "$OPENAI_API_KEY" ]; then
     echo "Warning: OPENAI_API_KEY not set. Cannot run full reproduction."
     echo "To reproduce results, set your OpenAI API key:"
     echo "export OPENAI_API_KEY='your-key-here'"
